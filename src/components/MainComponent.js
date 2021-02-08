@@ -70,7 +70,6 @@ class Main extends Component {
     return (
       <div>
         <Header />
-        <div>
         <TransitionGroup>
             <CSSTransition key={this.props.location.key} classNames="page" timeout={300}>
               <Switch location={this.props.location}>
@@ -83,7 +82,6 @@ class Main extends Component {
               </Switch>
             </CSSTransition>
           </TransitionGroup>
-        </div>
         <Footer />
       </div>
     );
