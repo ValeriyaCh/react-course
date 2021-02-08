@@ -93,13 +93,6 @@ class CommentForm extends Component{
     }
 }
 
-function RenderDate({date}) {
-    return (
-        new Intl.DateTimeFormat('en-US', { year: 'numeric', month: 'short', 
-                                day: '2-digit'}).format(new Date(Date.parse(date)))
-    );
-}
-
 function RenderDish({dish}) {
     
     return(
@@ -142,7 +135,7 @@ function RenderDish({dish}) {
                         })}
                         </Stagger>
                             
-            ))}
+            ))
             </ul>   
                 <CommentForm dishId={dishId} postComment={postComment} />
             </div>
